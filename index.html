@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="assets/javascript/game.js"></script>
+  </head>
+  <body>
+    <header class="bg-secondary text-center p-3 border-bottom text-white">
+    <h1>Choose a category!</h1>
+  </header>
+
+  <div class="container bg-secondary border">
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="example(Bands)">Bands</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="example(Shows)">Shows</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="example(Films)">Films</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="input()">Add word</button>
+
+  </div>
+
+    <div class="container bg-white border mt-5" id="gameBox">
+      <div class="row">
+        <div class="col-md-6 border-right">
+      <h3>Your word has: <span id="letters"></span> letters</h3>
+      <h3>Your have: <span id="guesses"></span> guesses left</h3>
+    </div>
+      <div class="col-md-6">
+        <h3><span id="currentWord"></span></h3>
+        <h3>Letters guessed: <span id="lettersGuessed"></span>
+
+
+  </div>
+
+
+    </div>
+
+
+
+
+  </body>
+</html>
